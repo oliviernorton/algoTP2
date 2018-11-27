@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=TP2PartieATest
+comment1.params=
+comment1.target=void\ WHEN_binaryNumberRepresentsInt_28_THEN_convertFromBinaryToInt_returnsIntValue()
+numComments=2
