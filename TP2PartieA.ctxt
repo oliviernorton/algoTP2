@@ -6,4 +6,6 @@ comment2.params=c
 comment2.target=int\ transformASCII_CharToInt(char)
 comment3.params=binarySequence
 comment3.target=int\ convertFromBinaryToInt(char[])
-numComments=4
+comment4.params=value\ binaryArraySize
+comment4.target=char[]\ convertFromIntToBinary(int,\ int)
+numComments=5

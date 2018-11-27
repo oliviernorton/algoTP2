@@ -51,7 +51,7 @@ public class TP2PartieATest
         final int EXPECTED_INT_VALUE = 17;
         assertEquals(EXPECTED_INT_VALUE, intValue);
     }
-    /*
+    
     //ConvertFromInToBinary
     @Test
     public void WHEN_intValueIs_28_THEN_convertFromIntToBinary_returnsBinaryRepresentationOfIntValue(){
@@ -65,7 +65,7 @@ public class TP2PartieATest
         //Assert
         final char[] EXPECTED_BINARY_ARRAY = {'1','1','1','0','0'};
         assertArrayEquals(EXPECTED_BINARY_ARRAY, binaryArray);
-    }
+    }/*
     @Test
     public void WHEN_intValueIs_31_THEN_convertFromIntToBinary_returnsBinaryRepresentationOfIntValue(){
         //Arrange
@@ -92,8 +92,8 @@ public class TP2PartieATest
         final char[] EXPECTED_BINARY_ARRAY = {'1','0','0','0','1'};
         assertArrayEquals(EXPECTED_BINARY_ARRAY, binaryArray);
     }    
-
-    //convertCharToBinary
+    /*
+    //convertCharToBinary  
     @Test
     public void WHEN_charIs_a_THEN_convertCharToBinary_returnsBinaryRepresentationOfChar(){
         //Arrange

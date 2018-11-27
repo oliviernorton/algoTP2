@@ -6,4 +6,6 @@ comment2.params=
 comment2.target=void\ WHEN_binaryNumberRepresentsInt_31_THEN_convertFromBinaryToInt_returnsIntValue()
 comment3.params=
 comment3.target=void\ WHEN_binaryNumberRepresentsInt_17_THEN_convertFromBinaryToInt_returnsIntValue()
-numComments=4
+comment4.params=
+comment4.target=void\ WHEN_intValueIs_28_THEN_convertFromIntToBinary_returnsBinaryRepresentationOfIntValue()
+numComments=5
