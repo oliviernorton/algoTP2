@@ -12,23 +12,20 @@ public class TP2PartieA
   }
   
   static int convertFromBinaryToInt(char[] binarySequence){
-    int value = 0;
-      for(int i = binarySequence.length - 1; i >= 0; i--){
+    int value = 1;   
+    int positionValue = 1;
+    for(int i = binarySequence.length - 1; i >= binarySequence.length - 1; i++){
+        positionValue = positionValue * 2;
+        
+    }
+    for(int i = binarySequence.length - 1; i >= 0; i--){
           if(binarySequence[i] == '1'){
-              value = value + (int)getBinValue(i);
+              value = value + positionValue;
           }
     }
     return value;
   }
   
-  static double getBinValue(int pos){
-    double positionValue = 31;
-    double value = 0;
-    for(int i = 0; i < pos; i--){
-        value = positionValue / 2;
-        
-    }
-    return value;
-  }
+  
     
 }
