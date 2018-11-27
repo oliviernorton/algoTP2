@@ -12,27 +12,22 @@ public class TP2PartieA
   }
   
   static int convertFromBinaryToInt(char[] binarySequence){
-      /*final int INDEX_AT_THE_END = binarySequence[binarySequence.length - 1];*/
-      int[] binaryConvertisorValues = new int[binarySequence.length];
-      binaryConvertisorValues[0] = 1;
-      binaryConvertisorValues[1] = 2;
-      binaryConvertisorValues[2] = 4;
-      binaryConvertisorValues[3] = 8;
-      binaryConvertisorValues[4] = 16;
-      int result = 0;
-      
-      for(int i = INDEX_AT_THE_END; i>=0; i--){
-          char binarySequenceCharVal = binarySequence[i];   //pour convertir char to int
-          int binarySequenceIntVal = binarySequenceCharVal - '0';    //pour convertir char to int
-          int binaryConvertisorValuesIndex = 0;
-          if(binarySequenceIntVal == 1){
-              result = result + binaryConvertisorValues[binaryConvertisorValuesIndex];
-            }
-          binaryConvertisorValuesIndex = binaryConvertisorValuesIndex + 1;
-        }
-      
-      
-      return result;
+    int value = 0;
+      for(int i = binarySequence.length - 1; i >= 0; i--){
+          if(binarySequence[i] == '1'){
+              value = value + getBinValue(i);
+          }
     }
+    return value;
+  }
+  
+  static int getBinValue(int pos){
+    int positionValue = 1;
+    for(int i = 0; i < pos; i--){
+        positionValue = positionValue + positionValue;
+        
+    }
+    return positionValue;
+  }
     
 }
