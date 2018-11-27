@@ -26,7 +26,7 @@ public class TP2PartieATest
         final int EXPECTED_INT_VALUE = 28;
         assertEquals(EXPECTED_INT_VALUE, intValue);
     }
-    /*
+    
     @Test
     public void WHEN_binaryNumberRepresentsInt_31_THEN_convertFromBinaryToInt_returnsIntValue(){
         //Arrange
@@ -51,7 +51,7 @@ public class TP2PartieATest
         final int EXPECTED_INT_VALUE = 17;
         assertEquals(EXPECTED_INT_VALUE, intValue);
     }
-    
+    /*
     //ConvertFromInToBinary
     @Test
     public void WHEN_intValueIs_28_THEN_convertFromIntToBinary_returnsBinaryRepresentationOfIntValue(){

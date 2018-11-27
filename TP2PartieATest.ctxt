@@ -2,4 +2,8 @@
 comment0.target=TP2PartieATest
 comment1.params=
 comment1.target=void\ WHEN_binaryNumberRepresentsInt_28_THEN_convertFromBinaryToInt_returnsIntValue()
-numComments=2
+comment2.params=
+comment2.target=void\ WHEN_binaryNumberRepresentsInt_31_THEN_convertFromBinaryToInt_returnsIntValue()
+comment3.params=
+comment3.target=void\ WHEN_binaryNumberRepresentsInt_17_THEN_convertFromBinaryToInt_returnsIntValue()
+numComments=4
