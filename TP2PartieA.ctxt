@@ -7,5 +7,5 @@ comment2.target=int\ transformASCII_CharToInt(char)
 comment3.params=binarySequence
 comment3.target=int\ convertFromBinaryToInt(char[])
 comment4.params=pos
-comment4.target=int\ getBinValue(int)
+comment4.target=double\ getBinValue(int)
 numComments=5
