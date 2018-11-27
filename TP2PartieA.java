@@ -23,11 +23,12 @@ public class TP2PartieA
   
   static int getBinValue(int pos){
     int positionValue = 1;
+    int value = 0;
     for(int i = 0; i < pos; i--){
-        positionValue = positionValue + positionValue;
+        value =  + positionValue;
         
     }
-    return positionValue;
+    return value;
   }
     
 }
