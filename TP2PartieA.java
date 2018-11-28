@@ -22,10 +22,10 @@ public class TP2PartieA
         return value;
     }
     
-    static char[] convertFromIntToBinary(int value, int binaryArraySize){
-        char[] arrayOfBinary = new char[binaryArraySize];
+    static char[] convertFromIntToBinary(int value, int resultSize){
+        char[] arrayOfBinary = new char[resultSize];
         int bitToPushInArrayOfBinary;
-        for(int i = 0; i < binaryArraySize; i++){
+        for(int i = 0; i < resultSize; i++){
             bitToPushInArrayOfBinary = value % 2;
             bitToPushInArrayOfBinary = bitToPushInArrayOfBinary;
             arrayOfBinary[i] = (char)(bitToPushInArrayOfBinary + '0');
@@ -49,5 +49,16 @@ public class TP2PartieA
         }
         
     }
-
+    
+    static char[] convertCharToBinary(char c){
+        char[] array = new char[10];
+        
+        return array;
+    }
+    
+    static char convertBinaryToChar(char[] binarySequence){
+        char arra = 'a';
+        
+        return arra;
+    }
 }
