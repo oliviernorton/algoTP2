@@ -65,7 +65,7 @@ public class TP2PartieATest
         //Assert
         final char[] EXPECTED_BINARY_ARRAY = {'1','1','1','0','0'};
         assertArrayEquals(EXPECTED_BINARY_ARRAY, binaryArray);
-    }/*
+    }
     @Test
     public void WHEN_intValueIs_31_THEN_convertFromIntToBinary_returnsBinaryRepresentationOfIntValue(){
         //Arrange

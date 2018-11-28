@@ -40,7 +40,7 @@ public class TP2PartieA
     static void charSwap(char[] arrayOfBinary){
         int j = arrayOfBinary.length - 1;
         for(int i = 0; i < (arrayOfBinary.length) / 2; i++){
-            char buff = '0';
+            char buff = arrayOfBinary[i];
             arrayOfBinary[i] = buff;
             arrayOfBinary[i] = arrayOfBinary[j];
             arrayOfBinary[j] = buff;
