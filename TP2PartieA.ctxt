@@ -9,5 +9,5 @@ comment3.target=int\ convertFromBinaryToInt(char[])
 comment4.params=value\ binaryArraySize
 comment4.target=char[]\ convertFromIntToBinary(int,\ int)
 comment5.params=arrayOfBinary
-comment5.target=void\ charSwap(char[])
+comment5.target=void\ charArraySwap(char[])
 numComments=6

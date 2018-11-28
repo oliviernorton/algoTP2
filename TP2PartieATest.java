@@ -7,7 +7,31 @@ public class TP2PartieATest
 {
     
     // ========== TODO: tests additionnels à faire par l'étudiant
+    @Test
+    public void WHEN_notEvenNumberOfCellsInArray_THEN_swapArray(){
+        //Arrange        
+        final char[] BINARY_ARRAY = {'1','1','1','0','0'};
+        
+        //Act
+        TP2PartieA.charArraySwap(BINARY_ARRAY);
+        
+        //Assert
+        final char[] EXPECTED_CHAR_VALUE = {'0','0','1','1','1'};
+        assertArrayEquals(EXPECTED_CHAR_VALUE, BINARY_ARRAY);
+    }
     
+    @Test
+    public void WHEN_evenNumberOfCellsInArrayTHEN_swapArray(){
+        //Arrange        
+        final char[] BINARY_ARRAY = {'1','1','1','0','0','1','1','0'};
+        
+        //Act
+        TP2PartieA.charArraySwap(BINARY_ARRAY);
+        
+        //Assert
+        final char[] EXPECTED_CHAR_VALUE = {'0','1','1','0','0','1','1','1'};
+        assertArrayEquals(EXPECTED_CHAR_VALUE, BINARY_ARRAY);
+    }
 
     
     
@@ -233,5 +257,5 @@ public class TP2PartieATest
         final char EXPECTED_CHAR_VALUE = '+';
         assertEquals(EXPECTED_CHAR_VALUE, charValue);
     }
-    */
+   */
 }

@@ -1,15 +1,19 @@
 #BlueJ class context
 comment0.target=TP2PartieATest
 comment1.params=
-comment1.target=void\ WHEN_binaryNumberRepresentsInt_28_THEN_convertFromBinaryToInt_returnsIntValue()
+comment1.target=void\ WHEN_notEvenNumberOfCellsInArray_THEN_swapArray()
 comment2.params=
-comment2.target=void\ WHEN_binaryNumberRepresentsInt_31_THEN_convertFromBinaryToInt_returnsIntValue()
+comment2.target=void\ WHEN_evenNumberOfCellsInArrayTHEN_swapArray()
 comment3.params=
-comment3.target=void\ WHEN_binaryNumberRepresentsInt_17_THEN_convertFromBinaryToInt_returnsIntValue()
+comment3.target=void\ WHEN_binaryNumberRepresentsInt_28_THEN_convertFromBinaryToInt_returnsIntValue()
 comment4.params=
-comment4.target=void\ WHEN_intValueIs_28_THEN_convertFromIntToBinary_returnsBinaryRepresentationOfIntValue()
+comment4.target=void\ WHEN_binaryNumberRepresentsInt_31_THEN_convertFromBinaryToInt_returnsIntValue()
 comment5.params=
-comment5.target=void\ WHEN_intValueIs_31_THEN_convertFromIntToBinary_returnsBinaryRepresentationOfIntValue()
+comment5.target=void\ WHEN_binaryNumberRepresentsInt_17_THEN_convertFromBinaryToInt_returnsIntValue()
 comment6.params=
-comment6.target=void\ WHEN_intValueIs_17_THEN_convertFromIntToBinary_returnsBinaryRepresentationOfIntValue()
-numComments=7
+comment6.target=void\ WHEN_intValueIs_28_THEN_convertFromIntToBinary_returnsBinaryRepresentationOfIntValue()
+comment7.params=
+comment7.target=void\ WHEN_intValueIs_31_THEN_convertFromIntToBinary_returnsBinaryRepresentationOfIntValue()
+comment8.params=
+comment8.target=void\ WHEN_intValueIs_17_THEN_convertFromIntToBinary_returnsBinaryRepresentationOfIntValue()
+numComments=9

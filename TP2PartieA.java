@@ -32,12 +32,12 @@ public class TP2PartieA
             value = value / 2;
             
         }
-        charSwap(arrayOfBinary);
+        charArraySwap(arrayOfBinary);
         
         return arrayOfBinary;
     }
     
-    static void charSwap(char[] arrayOfBinary){
+    static void charArraySwap(char[] arrayOfBinary){
         int j = arrayOfBinary.length - 1;
         for(int i = 0; i < (arrayOfBinary.length) / 2; i++){
             char buff = arrayOfBinary[i];
