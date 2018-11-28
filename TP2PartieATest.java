@@ -130,7 +130,7 @@ public class TP2PartieATest
         final char[] EXPECTED_BINARY_ARRAY = {'0','1','1','0','0','0','0','1'};
         assertArrayEquals(EXPECTED_BINARY_ARRAY, binaryArray);        
     }
-    /*@Test
+    @Test
     public void WHEN_charIs_c_THEN_convertCharToBinary_returnsBinaryRepresentationOfChar(){
         //Arrange
         char CHAR_VALUE = 'c';
@@ -257,5 +257,5 @@ public class TP2PartieATest
         final char EXPECTED_CHAR_VALUE = '+';
         assertEquals(EXPECTED_CHAR_VALUE, charValue);
     }
-   */
+   
 }

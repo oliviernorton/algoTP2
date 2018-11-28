@@ -51,14 +51,23 @@ public class TP2PartieA
     }
     
     static char[] convertCharToBinary(char c){
-        char[] array = new char[10];
+        final int ARRAY_OF_BINARY_SIZE = 8;
+        int intResult;
+        char[] binaryResult = new char[8];
         
-        return array;
+        intResult = transformASCII_CharToInt(c);
+        binaryResult = convertFromIntToBinary(intResult,ARRAY_OF_BINARY_SIZE);
+        
+        return binaryResult;
     }
     
     static char convertBinaryToChar(char[] binarySequence){
-        char arra = 'a';
+        int intResult;
+        char charResult;
         
-        return arra;
+        intResult = convertFromBinaryToInt(binarySequence);
+        charResult = transformASCII_IntToChar(intResult);
+        
+        return charResult;
     }
 }
