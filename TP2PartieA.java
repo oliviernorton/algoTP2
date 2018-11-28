@@ -21,11 +21,33 @@ public class TP2PartieA
         }
         return value;
     }
-
+    
     static char[] convertFromIntToBinary(int value, int binaryArraySize){
-        char[] array = new char[5];
+        char[] arrayOfBinary = new char[binaryArraySize];
+        int bitToPushInArrayOfBinary;
+        for(int i = 0; i < binaryArraySize; i++){
+            bitToPushInArrayOfBinary = value % 2;
+            bitToPushInArrayOfBinary = bitToPushInArrayOfBinary;
+            arrayOfBinary[i] = (char)(bitToPushInArrayOfBinary + '0');
+            value = value / 2;
+            
+        }
+        charSwap(arrayOfBinary);
         
-        return array;
+        return arrayOfBinary;
+    }
+    
+    static void charSwap(char[] arrayOfBinary){
+        int j = arrayOfBinary.length - 1;
+        for(int i = 0; i < (arrayOfBinary.length) / 2; i++){
+            char buff = '0';
+            arrayOfBinary[i] = buff;
+            arrayOfBinary[i] = arrayOfBinary[j];
+            arrayOfBinary[j] = buff;
+            j--;
+            
+        }
+        
     }
 
 }
