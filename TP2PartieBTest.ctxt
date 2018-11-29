@@ -1,5 +1,15 @@
 #BlueJ class context
 comment0.target=TP2PartieBTest
 comment1.params=
-comment1.target=void\ WHEN_recieveCharArray_THEN_convertToBinary()
-numComments=2
+comment1.target=void\ WHEN_recieveCharArrayOf2_THEN_convertToBinary()
+comment2.params=
+comment2.target=void\ WHEN_recieveCharArrayOf4_THEN_convertToBinary()
+comment3.params=
+comment3.target=void\ WHEN_recieveCharArrayOf3_THEN_convertToBinary()
+comment4.params=
+comment4.target=void\ WHEN_recieveCharArrayOfALLO_THEN_convertToBinary()
+comment5.params=
+comment5.target=void\ WHEN_4cellsCharArrayAreRecieved_THEN_computeHowManyCellItWillTake_return_howManyCellWeNeed()
+comment6.params=
+comment6.target=void\ WHEN_5cellsCharArrayAreRecieved_THEN_computeHowManyCellItWillTake_return_howManyCellWeNeed()
+numComments=7

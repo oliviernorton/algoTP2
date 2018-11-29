@@ -2,12 +2,16 @@
 public class TP2PartieB
 {
     static char[] convertCharArrayToBinary(char[] charArray){
-        char[] arrayOfBinary = new char[computeHowManyCellsBinaryArrayWillTake(charArray)];
-        for(int i = 0 ; i < arrayOfBinary.length;i++){
-            arrayOfBinary[i] = TP2PartieA.convertCharToBinary(charArray[i]);
+        char[] arrayOfBinary = new char[8]; 
+        char[] array = new char[computeHowManyCellsBinaryArrayWillTake(charArray)];
+        for(int i = 0 ; i < charArray.length;i++){
+             arrayOfBinary = TP2PartieA.convertCharToBinary(charArray[i]);
+             for(int j = 0; j < arrayOfBinary.length; j++){
+                array[(i*8)+j] = arrayOfBinary[j];
+               }
         }
-
-        return arrayOfBinary;
+        //
+        return array;
     }
 
     static int computeHowManyCellsBinaryArrayWillTake(char[] charArray){

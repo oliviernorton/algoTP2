@@ -52,7 +52,7 @@ public class TP2PartieA
     static char[] convertCharToBinary(char c){
         final int ARRAY_OF_BINARY_SIZE = 8;
         int intResult;
-        char[] binaryResult = new char[8];
+        char[] binaryResult = new char[ARRAY_OF_BINARY_SIZE];
         
         intResult = transformASCII_CharToInt(c);
         binaryResult = convertFromIntToBinary(intResult,ARRAY_OF_BINARY_SIZE);
