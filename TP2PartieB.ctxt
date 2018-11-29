@@ -1,2 +1,7 @@
 #BlueJ class context
-numComments=0
+comment0.target=TP2PartieB
+comment1.params=charArray
+comment1.target=char[]\ convertCharArrayToBinary(char[])
+comment2.params=charArray
+comment2.target=int\ computeHowManyCellsBinaryArrayWillTake(char[])
+numComments=3

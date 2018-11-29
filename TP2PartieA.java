@@ -27,7 +27,6 @@ public class TP2PartieA
         int bitToPushInArrayOfBinary;
         for(int i = 0; i < resultSize; i++){
             bitToPushInArrayOfBinary = value % 2;
-            bitToPushInArrayOfBinary = bitToPushInArrayOfBinary;
             arrayOfBinary[i] = (char)(bitToPushInArrayOfBinary + '0');
             value = value / 2;
             
