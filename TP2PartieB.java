@@ -10,7 +10,6 @@ public class TP2PartieB
                 array[(i*8)+j] = arrayOfBinary[j];
                }
         }
-        //
         return array;
     }
 
@@ -20,5 +19,10 @@ public class TP2PartieB
         result = charArray.length;
         result = result * BIT_FOR_ONE_CHARACATER;
         return result;
+    }
+    
+    static char[] convertBinaryToCharArray(char[] binaryArray){
+        
+        
     }
 }
