@@ -21,40 +21,61 @@ public class TP2PartieC
 
         return s;
     }     
-    
+
     static char[] encryptXOR(char[] charMsg, char[] charKey){
-        char[] charConvertToBinary = new char[TP2PartieB.computeHowManyCellsBinaryArrayWillTake(charMsg)];
-        charConvertToBinary = TP2PartieB.convertCharArrayToBinary(charMsg);
-        char[] reConver
-        for(int i = 0; i < charConvertToBinary.length;i++){
-            int j = 0;
-            while(j < charKey.length){
-                if((charKey[j] + charConvertToBinary[j]) == 0){
-                    charConvertToBinary[i] = '0';
-                }
-                else if((charKey[j] + charConvertToBinary[j]) == 1){
-                    charConvertToBinary[i] = '1';
-                }
-                else if((charKey[j] + charConvertToBinary[j]) <= 2){
-                    charConvertToBinary[i] = '0';
-                    charConvertToBinary[i + 1] = '1';
-                }
-                j++;
+        final int NIBBLE = 4;
+        char[] resultArray = TP2PartieB.convertCharArrayToBinary(charMsg);
+        char[] resultKey = TP2PartieB.convertCharArrayToBinary(charKey);
+
+        for(int i = 0; i < resultArray.length;i++){
+            if(resultArray[i] == '0' && resultKey[i] == '1' ||resultArray[i] == '1' && resultKey[i] == '0' ){
+                resultArray[i] = '1';
             }
-            j = 0;
-            TP2PartieA.convertFromBinaryToInt(charConvertToBinary);
+            else{
+                    resultArray[i] = '0';
+
+            }
         }
-        
-        
-        return charMsg;
+        TP2PartieB.convertBinaryToCharArray(resultArray);
+        resultArray = new char[computeHowManyCellsHexArrayWillTake(resultArray)];
+        for(int i = 0; i < resultArray.length;i++){
+            if(resultArray[i] >= 10){
+                resultArray[i] = 'A';
+            }
+            else if(resultArray[i] >= 11){
+                resultArray[i] = 'B';
+            }
+            else if(resultArray[i] >= 12){
+                resultArray[i] = 'C';
+            }
+            else if(resultArray[i] >= 13){
+                resultArray[i] = 'D';
+            }
+            else if(resultArray[i] >= 14){
+                resultArray[i] = 'E';
+            }
+            else if(resultArray[i] >= 15){
+                resultArray[i] = 'F';
+            }
+            else if(resultArray[i] <= 9){
+                resultArray[i] = resultArray[i];
+            }
+        }
+        char[] returnedArray = new char[resultArray.length * 2];
+        for(int i = 0; i < returnedArray.length; i++){
+            returnedArray[i] = resultArray[i];
+        }
+        return returnedArray;
     }
     
-   
-    
-    
-    
+    static int computeHowManyCellsHexArrayWillTake(char[] binArray){
+        final int SIZE = binArray.length / 4;
+        return SIZE;
+    }
+
+
     static char[] decryptXOR(char[] charMsg, char[] charKey){
         return charMsg;
     }
 }
-             
+ 
