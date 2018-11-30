@@ -69,4 +69,26 @@ public class TP2PartieBTest
         final int EXPECTED_RESULT = 40;
         assertEquals(EXPECTED_RESULT,result);
     }
+    
+    @Test
+    public void WHEN_recieveArrayOf16Binary_THEN_convertToChar(){
+        //ARRENGE
+        char[] binaryArray={'0', '1','0', '0','0', '0','0', '1','0', '0','1', '0','1', '1','0', '1'};
+        //ACT
+        char[] charArray = TP2PartieB.convertBinaryToCharArray(binaryArray);
+        //ASSERT
+        final char[] EXPECTED_RESULT={'A','-'};
+        assertArrayEquals(EXPECTED_RESULT,charArray);
+    }
+    
+    @Test
+    public void WHEN_recieveArrayOf32Binary_THEN_convertToChar(){
+        //ARRENGE
+        char[] binaryArray={'0', '1','0', '0','0', '0','0', '1','0', '0','1', '0','1', '1','0', '1','0', '1','0', '0','0', '0','0', '1','0', '0','1', '0','1', '1','0', '1'};
+        //ACT
+        char[] charArray = TP2PartieB.convertBinaryToCharArray(binaryArray);
+        //ASSERT
+        final char[] EXPECTED_RESULT={'A','-','A','-'};
+        assertArrayEquals(EXPECTED_RESULT,charArray);
+    }
 }

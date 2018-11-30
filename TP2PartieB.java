@@ -2,15 +2,15 @@
 public class TP2PartieB
 {
     static char[] convertCharArrayToBinary(char[] charArray){
-        char[] arrayOfBinary = new char[8]; 
-        char[] array = new char[computeHowManyCellsBinaryArrayWillTake(charArray)];
+        char[] arrayOfBinaryToPush = new char[8]; 
+        char[] arrayFinal = new char[computeHowManyCellsBinaryArrayWillTake(charArray)];
         for(int i = 0 ; i < charArray.length;i++){
-             arrayOfBinary = TP2PartieA.convertCharToBinary(charArray[i]);
-             for(int j = 0; j < arrayOfBinary.length; j++){
-                array[(i*8)+j] = arrayOfBinary[j];
+             arrayOfBinaryToPush = TP2PartieA.convertCharToBinary(charArray[i]);
+             for(int j = 0; j < arrayOfBinaryToPush.length; j++){
+                arrayFinal[(i*8)+j] = arrayOfBinaryToPush[j];
                }
         }
-        return array;
+        return arrayFinal;
     }
 
     static int computeHowManyCellsBinaryArrayWillTake(char[] charArray){
@@ -22,7 +22,22 @@ public class TP2PartieB
     }
     
     static char[] convertBinaryToCharArray(char[] binaryArray){
+        char[] binarySequence = new char[8];
+        char[] arrayFinal = new char[binaryArray.length / 8];
+        
+        for(int i = 0; i < arrayFinal.length;i++){
+            int j = 0;
+            while(j < binarySequence.length){
+                binarySequence[j] = binaryArray[(8*i)+j];
+                j++;
+            }
+            arrayFinal[i] = TP2PartieA.convertBinaryToChar(binarySequence);
+        }
         
         
+            return arrayFinal;
+        }
+       
     }
-}
+    
+    
