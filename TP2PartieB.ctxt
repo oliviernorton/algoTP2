@@ -6,4 +6,6 @@ comment2.params=charArray
 comment2.target=int\ computeHowManyCellsBinaryArrayWillTake(char[])
 comment3.params=binaryArray
 comment3.target=char[]\ convertBinaryToCharArray(char[])
-numComments=4
+comment4.params=binArray
+comment4.target=int\ computeHowManyCellsCharArrayWillTake(char[])
+numComments=5
