@@ -1,6 +1,19 @@
 #BlueJ class context
 comment0.target=TP2PartieCTest
 comment1.params=
-comment1.target=void\ WHEN_ALLOAAndTheKeyIsclclc_THEN_convertAndEncryptReturn_EncodedMessage()
-comment1.text=\r\n\ \ \ \ @Test\r\n\ \ \ \ public\ void\ WHEN_ALLOAndTheKeyIsclcl_THEN_convertAndEncryptReturn_EncodedMessage(){\r\n\ \ \ \ \ \ \ \ final\ char[]\ CHAR_MSG\ \=\ {'A','L','L','O'};\r\n\ \ \ \ \ \ \ \ final\ char[]\ CHAR_KEY\ \=\ {'c','l','c','l'};\r\n\ \ \ \ \ \ \ \ //ACT\r\n\ \ \ \ \ \ \ \ char[]\ result\ \=\ TP2PartieC.encryptXOR(CHAR_MSG,CHAR_KEY);\r\n\ \ \ \ \ \ \ \ //ASSERT\r\n\ \ \ \ \ \ \ \ final\ char[]\ EXPECTED_ARRAY\ \=\ {'0','0','1','0','0','0','1','0','0','0','1','0','0','0','0','0','0','0','1','0','1','1','1','1','0','0','1','0','0','0','1','1'};\r\n\ \ \ \ \ \ \ \ assertArrayEquals(EXPECTED_ARRAY,result);\r\n\ \ \ \ }\r\n\r\n\ \ \ \ @Test\r\n\ \ \ \ public\ void\ WHEN_ALLOALLOAndTheKeyIsclclclcl_THEN_convertAndEncryptReturn_EncodedMessage(){\r\n\ \ \ \ \ \ \ \ //ARRENGE\r\n\ \ \ \ \ \ \ \ final\ char[]\ CHAR_MSG\ \=\ {'A','L','L','O','A','L','L','O'};\r\n\ \ \ \ \ \ \ \ final\ char[]\ CHAR_KEY\ \=\ {'c','l','c','l','c','l','c','l'};\r\n\ \ \ \ \ \ \ \ //ACT\r\n\ \ \ \ \ \ \ \ char[]\ result\ \=\ TP2PartieC.encryptXOR(CHAR_MSG,CHAR_KEY);\r\n\ \ \ \ \ \ \ \ //ASSERT\r\n\ \ \ \ \ \ \ \ final\ char[]\ EXPECTED_ARRAY\ \=\ {'0','0','1','0','0','0','1','0','0','0','1','0','0','0','0','0','0','0','1','0','1','1','1','1','0','0','1','0','0','0','1','1','0','0','1','0','0','0','1','0','0','0','1','0','0','0','0','0','0','0','1','0','1','1','1','1','0','0','1','0','0','0','1','1'};\r\n\ \ \ \ \ \ \ \ assertArrayEquals(EXPECTED_ARRAY,result);\r\n\ \ \ \ }\r\n\r\n\ \ \ \ @Test\r\n\ \ \ \ public\ void\ WHEN_ALLOALAndTheKeyIsclclcl_THEN_convertAndEncryptReturn_EncodedMessage(){\r\n\ \ \ \ \ \ \ \ //ARRENGE\r\n\ \ \ \ \ \ \ \ final\ char[]\ CHAR_MSG\ \=\ {'A','L','L','O','A','L'};\r\n\ \ \ \ \ \ \ \ final\ char[]\ CHAR_KEY\ \=\ {'c','l','c','l','c','l'};\r\n\ \ \ \ \ \ \ \ //ACT\r\n\ \ \ \ \ \ \ \ char[]\ result\ \=\ TP2PartieC.encryptXOR(CHAR_MSG,CHAR_KEY);\r\n\ \ \ \ \ \ \ \ //ASSERT\r\n\ \ \ \ \ \ \ \ final\ char[]\ EXPECTED_ARRAY\ \=\ {'0','0','1','0','0','0','1','0','0','0','1','0','0','0','0','0','0','0','1','0','1','1','1','1','0','0','1','0','0','0','1','1','0','0','1','0','0','0','1','0','0','0','1','0','0','0','0','0'};\r\n\ \ \ \ \ \ \ \ assertArrayEquals(EXPECTED_ARRAY,result);\r\n\ \ \ \ }\r\n\r\n\ \ \ \ @Test\r\n\ \ \ \ public\ void\ WHEN_ALLOAAndTheKeyIsclclc_THEN_convertAndEncryptReturn_EncodedMessage(){\r\n\ \ \ \ \ \ \ \ //ARRENGE\r\n\ \ \ \ \ \ \ \ final\ char[]\ CHAR_MSG\ \=\ {'A','L','L','O','A'};\r\n\ \ \ \ \ \ \ \ final\ char[]\ CHAR_KEY\ \=\ {'c','l','c','l','c'};\r\n\ \ \ \ \ \ \ \ //ACT\r\n\ \ \ \ \ \ \ \ char[]\ result\ \=\ TP2PartieC.encryptXOR(CHAR_MSG,CHAR_KEY);\r\n\ \ \ \ \ \ \ \ //ASSERT\r\n\ \ \ \ \ \ \ \ final\ char[]\ EXPECTED_ARRAY\ \=\ {'0','0','1','0','0','0','1','0','0','0','1','0','0','0','0','0','0','0','1','0','1','1','1','1','0','0','1','0','0','0','1','1','0','0','1','0','0','0','1','0'};\r\n\ \ \ \ \ \ \ \ assertArrayEquals(EXPECTED_ARRAY,result);\r\n\ \ \ \ }\r\n
-numComments=2
+comment1.target=void\ WHEN_ALLOAndTheKeyIsclcl_THEN_convertAndEncryptReturn_EncodedMessage()
+comment2.params=
+comment2.target=void\ WHEN_ALLOALLOAndTheKeyIsclclclcl_THEN_convertAndEncryptReturn_EncodedMessage()
+comment3.params=
+comment3.target=void\ WHEN_ALLOALAndTheKeyIsclclcl_THEN_convertAndEncryptReturn_EncodedMessage()
+comment4.params=
+comment4.target=void\ WHEN_ALLOAAndTheKeyIsclclc_THEN_convertAndEncryptReturn_EncodedMessage()
+comment5.params=
+comment5.target=void\ WHEN_encryptedMessageAndTheKeyIsclclc_THEN_convertAndEncryptReturn_decriptedMessage()
+comment6.params=
+comment6.target=void\ WHEN_encryptedMessageAndTheKeyIsclcl_THEN_convertAndEncryptReturn_decriptedMessage()
+comment7.params=
+comment7.target=void\ WHEN_encryptedMessageAndTheKeyIsclclclcl_THEN_convertAndEncryptReturn_decriptedMessage()
+comment8.params=
+comment8.target=void\ WHEN_encryptedMessageAndTheKeyIsclclcl_THEN_convertAndEncryptReturn_decriptedMessage()
+numComments=9
