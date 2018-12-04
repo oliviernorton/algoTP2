@@ -1,5 +1,11 @@
 #BlueJ class context
 comment0.target=TP2PartieDTest
 comment1.params=
-comment1.target=void\ WHEN__THEN_retur()
-numComments=2
+comment1.target=void\ WHEN_16Binary_THEN_return4HexResult()
+comment2.params=
+comment2.target=void\ WHEN_32Binary_THEN_return8HexResult()
+comment3.params=
+comment3.target=void\ WHEN_16BinaryWithHexValuesGreatestThen10_THEN_return4HexResult()
+comment4.params=
+comment4.target=void\ WHEN_32BinaryWithHexValuesGreatestThen10_THEN_return8HexResult()
+numComments=5

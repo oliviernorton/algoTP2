@@ -25,7 +25,7 @@ public class TP2PartieD
 
     static char[] convertBinaryArrayToHexArray(char[] binaryArray){
         char[] binIntConvertToHex = new char[binaryArray.length / TP2PartieC.NIBBLE];
-        
+
         char[] binarySequence = new char[TP2PartieC.NIBBLE];
         int[] binConvertToInt = new int[binaryArray.length / TP2PartieC.NIBBLE];
         for(int i = 0; i < binConvertToInt.length; i++){
@@ -34,54 +34,43 @@ public class TP2PartieD
             }
             binConvertToInt[i] = TP2PartieA.convertFromBinaryToInt(binarySequence);
         }
-        
-        // for(int i = 0; i < arrayFinal.length;i++){
-            // int j = 0;
-            // while(j < binarySequence.length){
-                // binarySequence[j] = binaryArray[(BIT_FOR_ONE_CHARACATER*i)+j];
-                // j++;
-            // }
-            // arrayFinal[i] = TP2PartieA.convertBinaryToChar(binarySequence);
-        // }
-        
-        
-        int f = 0;
-        for(int i = 0; i < binConvertToInt.length; i++){
-            if(binConvertToInt[i] > 10){
-                if(binConvertToInt[i] == 10){
-                    binIntConvertToHex[i] = 'A';
-                }
-                else if(binConvertToInt[i] == 11){
-                    binIntConvertToHex[i] ='B';
-                }
-                else if(binConvertToInt[i] == 12){
-                    binIntConvertToHex[i] ='C';
-                }
-                else if(binConvertToInt[i] == 13){
-                    binIntConvertToHex[i] ='D';
-                }
-                else if(binConvertToInt[i] == 14){
-                    binIntConvertToHex[i] ='E';
-                }
-                else if(binConvertToInt[i] == 15){
-                    binIntConvertToHex[i] ='F';
-                }
 
-            }
-            else{
-                //binIntConvertToHex[i] = transformASCII_CharToInt(binConvertToInt[i];
-            }
-            
+        char[] intConvertedToChar = new char[binConvertToInt.length];
+
+        for(int i = 0; i < intConvertedToChar.length; i++){
+            switch(binConvertToInt[i]){
+                case 10:
+                    intConvertedToChar[i] = 'A';
+                    break;
+                case 11:
+                    intConvertedToChar[i] = 'B';
+                    break;
+                case 12:
+                    intConvertedToChar[i] = 'C';
+                    break;
+                case 13:
+                    intConvertedToChar[i] = 'D';
+                    break;
+                case 14:
+                    intConvertedToChar[i] = 'E';
+                    break;
+                case 15:
+                    intConvertedToChar[i] = 'F';
+                    break;
+                default:
+                    intConvertedToChar[i] = (char)(binConvertToInt[i] +'0');
+                    break;
+                }
         }
-        
-        return binIntConvertToHex;
+
+        return intConvertedToChar;
     }
-    
-   
-    
-    static int computeHowManyCellHexArrayWillTake(int[] binArray){
-        int size = binArray.length / NIBBLE;
-        return size;
-    }
+
 }
+
+/*  static int computeHowManyCellHexArrayWillTake(int[] binArray){
+int size = binArray.length / NIBBLE;
+return size;
+}
+}*/
  

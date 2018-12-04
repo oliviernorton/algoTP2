@@ -7,14 +7,50 @@ import org.junit.Test;
 public class TP2PartieDTest
 {
     @Test
-    public void WHEN__THEN_retur(){
+    public void WHEN_16Binary_THEN_return4HexResult(){
         //ARRENGE
         char[] binArray = {'0','0','1','1','0','0','0','1','0','1','0','0','0','0','1','1'};
         //ACT
-        TP2PartieD.convertBinaryArrayToHexArray(binArray);
+        char[] result = TP2PartieD.convertBinaryArrayToHexArray(binArray);
         
         //ASSERT
         final char[] EXPECTED_RESULT = {'3','1','4','3'};
-        assertArrayEquals(EXPECTED_RESULT , binArray);
+        assertArrayEquals(EXPECTED_RESULT , result);
+    }
+    
+    @Test
+    public void WHEN_32Binary_THEN_return8HexResult(){
+        //ARRENGE
+        char[] binArray = {'0','0','1','1','0','0','0','1','0','1','0','0','0','0','1','1','0','0','1','1','0','0','0','1','0','1','0','0','0','0','1','1'};
+        //ACT
+        char[] result = TP2PartieD.convertBinaryArrayToHexArray(binArray);
+        
+        //ASSERT
+        final char[] EXPECTED_RESULT = {'3','1','4','3','3','1','4','3'};
+        assertArrayEquals(EXPECTED_RESULT , result);
+    }
+    
+    @Test
+    public void WHEN_16BinaryWithHexValuesGreatestThen10_THEN_return4HexResult(){
+        //ARRENGE
+        char[] binArray = {'0','1','0','0','1','1','1','1','0','1','0','1','1','1','0','0'};
+        //ACT
+        char[] result = TP2PartieD.convertBinaryArrayToHexArray(binArray);
+        
+        //ASSERT
+        final char[] EXPECTED_RESULT = {'4','F','5','C'};
+        assertArrayEquals(EXPECTED_RESULT , result);
+    }
+    
+    @Test
+    public void WHEN_32BinaryWithHexValuesGreatestThen10_THEN_return8HexResult(){
+        //ARRENGE
+        char[] binArray = {'0','1','0','0','1','1','1','1','0','1','0','1','1','1','0','0','0','1','0','0','1','1','1','1','0','1','0','1','1','1','0','0'};
+        //ACT
+        char[] result = TP2PartieD.convertBinaryArrayToHexArray(binArray);
+        
+        //ASSERT
+        final char[] EXPECTED_RESULT = {'4','F','5','C','4','F','5','C'};
+        assertArrayEquals(EXPECTED_RESULT , result);
     }
 }
