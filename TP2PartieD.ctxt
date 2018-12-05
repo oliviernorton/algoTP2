@@ -4,4 +4,6 @@ comment1.params=msg\ key\ isEncrypting
 comment1.target=java.lang.String\ mainCipher(java.lang.String,\ java.lang.String,\ boolean)
 comment2.params=binaryArray
 comment2.target=char[]\ convertBinaryArrayToHexArray(char[])
-numComments=3
+comment3.params=hexArray
+comment3.target=char[]\ convertHexArrayToBinaryArray(char[])
+numComments=4

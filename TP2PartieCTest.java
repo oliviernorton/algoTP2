@@ -31,10 +31,10 @@ public class TP2PartieCTest
     }
 
     @Test
-    public void WHEN_ALLOALAndTheKeyIsclclcl_THEN_convertAndEncryptReturn_EncodedMessage(){
+    public void WHEN_ALLOALAndTheKeyIsclclc_THEN_convertAndEncryptReturn_EncodedMessage(){
         //ARRENGE
         final char[] CHAR_MSG = {'A','L','L','O','A','L'};
-        final char[] CHAR_KEY = {'c','l','c','l','c','l'};
+        final char[] CHAR_KEY = {'c','l','c','l','c'};
         //ACT
         char[] result = TP2PartieC.encryptXOR(CHAR_MSG,CHAR_KEY);
         //ASSERT

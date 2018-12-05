@@ -15,8 +15,8 @@ public class TP2PartieD
         }
         else
         {
-            //char[] binaryCipher = convertHexArrayToBinaryArray(msgCharArray);           
-            //rep = TP2PartieC.decryptXOR(binaryCipher, keyCharArray);
+            char[] binaryCipher = convertHexArrayToBinaryArray(msgCharArray);           
+            rep = TP2PartieC.decryptXOR(binaryCipher, keyCharArray);
         }
         String s = new String(rep);
 
@@ -58,19 +58,52 @@ public class TP2PartieD
                     intConvertedToChar[i] = 'F';
                     break;
                 default:
-                    intConvertedToChar[i] = (char)(binConvertToInt[i] +'0');
+                    intConvertedToChar[i] = (char)(binConvertToInt[i] +'0');        //force int to char
                     break;
                 }
         }
 
         return intConvertedToChar;
     }
-
+    
+    static char[] convertHexArrayToBinaryArray(char[] hexArray){
+        int[] hexConvertedToInt = new int[hexArray.length];
+        for(int i = 0; i < hexArray.length; i++){
+            switch(hexArray[i]){
+                case 'A':
+                    hexConvertedToInt[i] = 10;
+                    break;
+                case 'B':
+                    hexConvertedToInt[i] = 11;
+                    break;
+                case 'C':
+                    hexConvertedToInt[i] = 12;
+                    break;
+                case 'D':
+                    hexConvertedToInt[i] = 13;
+                    break;
+                case 'E':
+                    hexConvertedToInt[i] = 14;
+                    break;
+                case 'F':
+                    hexConvertedToInt[i] = 15;
+                    break;
+                default:
+                    hexConvertedToInt[i] = hexArray[i] - 0x30;
+                    break;
+                }
+        }
+        
+        char[] intConvertedToBin = new char[hexConvertedToInt.length * 2 * 8];
+        char[] oneHex = new char[TP2PartieC.NIBBLE];
+        for (int i = 0 ; i < hexConvertedToInt.length ; i++){
+            oneHex = TP2PartieA.convertFromIntToBinary(hexConvertedToInt[i],TP2PartieC.NIBBLE);
+            for (int j = 0 ; j < oneHex.length ; j++){
+                intConvertedToBin[i * 4 + j] = oneHex[j];
+            }
+        }
+        
+        
+        return intConvertedToBin;
+    }
 }
-
-/*  static int computeHowManyCellHexArrayWillTake(int[] binArray){
-int size = binArray.length / NIBBLE;
-return size;
-}
-}*/
- 
