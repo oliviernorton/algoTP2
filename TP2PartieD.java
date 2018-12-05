@@ -94,7 +94,7 @@ public class TP2PartieD
                 }
         }
         
-        char[] intConvertedToBin = new char[hexConvertedToInt.length * 2 * 8];
+        char[] intConvertedToBin = new char[hexConvertedToInt.length * TP2PartieC.NIBBLE];
         char[] oneHex = new char[TP2PartieC.NIBBLE];
         for (int i = 0 ; i < hexConvertedToInt.length ; i++){
             oneHex = TP2PartieA.convertFromIntToBinary(hexConvertedToInt[i],TP2PartieC.NIBBLE);
